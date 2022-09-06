@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Tinh Tien dien</title>
+    <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+  </head>
+  <body>
+  <div class="container-fluid">
+    <h1>Ứng dụng tính tiền điện theo 2 loại, thông thường và máy lạnh</h1>
+    <div class="screen-body-item">
+    <p class="description-app">Lượng tiên điện dùng cho cả nhà sẽ được tính trước, sau đó sẽ tính lượng điện cho máy lạnh.</p>
+    <p class="description-app">Tiền mỗi người được tính như sau:
+    <ul>
+      <li>Nếu không dùng máy lạnh: (Tiền điện không máy lạnh / số người)</li>
+      <li>Nếu dùng máy lạnh: (Tiền điện không máy lạnh / số người) + (Tiền điện riêng máy lạnh/ số người dùng máy lạnh)</li>
+    </p>
+    <p>Kết quả đã tính thuế 8% và dùng mức giá [1.678,1.735,2.015,2.536,2.834,2.927]</p>
+    <label>Nhập số kWh điện tổng:</label>
+    <input
+    type="text"
+    class="form-control"
+    placeholder="Số điện tổng (kWh)"
+    id="total" />
+    <label>Nhập số kWh điện máy lạnh:</label>
+    <input
+    type="text"
+    class="form-control"
+    placeholder="Số điện máy lạnh dùng (kWh)"
+    id="airConditioner" />
+
+    <div>
+      <input
+      type="button"
+      value="KẾT QUẢ"
+      class="form-button"
+      onclick="calculate()" />
+   </div>
+
+<!-- for showing the result-->
+<div class="form-group showdata">
+  <p id="showdata"></p>
+  </div>
+  </div>
+  <!--adding external javascript file-->
+  <script src="script.js"></script>
+  </body>
+
+  <footer>
+    Kim Hung
+  </footer>
+</html>
