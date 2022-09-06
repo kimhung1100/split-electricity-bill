@@ -58,6 +58,6 @@ const calculate = () => {
     document.querySelector("#showdata").innerHTML = `Tiền điện không máy lạnh ${normalCost}(nghìn đồng)`;
     document.querySelector("#showdata").innerHTML += `<br>Tiền điện máy lạnh ${airCondCost}(nghìn đồng)`;
     for(let i = 0; i < 6; i++){
-        document.querySelector("#showdata").innerHTML += `<br>level ${i}: ${eUsage[i]}kWh   '${eAirCond[i]}kWh   ${levelElectricFee[i]}đ`;
+        document.querySelector("#showdata").innerHTML += `<br>level ${i+1}: ${eUsage[i]}kWh   '${eAirCond[i]}kWh   ${levelElectricFee[i]}đ`;
     }
 }
