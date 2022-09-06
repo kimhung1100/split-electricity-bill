@@ -57,4 +57,7 @@ const calculate = () => {
     let airCondCost = parseFloat(airCondFee*1.08);
     document.querySelector("#showdata").innerHTML = `Tiền điện không máy lạnh ${normalCost}(nghìn đồng)`;
     document.querySelector("#showdata").innerHTML += `<br>Tiền điện máy lạnh ${airCondCost}(nghìn đồng)`;
+    for(let i = 0; i < 6; i++){
+        document.querySelector("#showdata").innerHTML += `<br>level ${i}: ${eUsage[i]}kWh   '${eAirCond[i]}kWh   ${levelElectricFee[i]}đ`;
+    }
 }
