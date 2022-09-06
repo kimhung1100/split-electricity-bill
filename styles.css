@@ -9,6 +9,9 @@ body{
 h1{
     font-family: nunito;
 }
+p {
+    font-family: nunito;
+}
 .description-app{
     font-size: 14px;
     color: #000000;
