@@ -57,7 +57,11 @@ const calculate = () => {
     let airCondCost = parseFloat(airCondFee*1.08);
     document.querySelector("#showdata").innerHTML = `Tiền điện không máy lạnh ${normalCost}(nghìn đồng)`;
     document.querySelector("#showdata").innerHTML += `<br>Tiền điện máy lạnh ${airCondCost}(nghìn đồng)`;
+    document.querySelector("#showdata").innerHTML += `<br>------------------------------------------------`;
+    document.querySelector("#showdata").innerHTML += `<br>------Bảng kWh điện theo từng mức-------------------------`;
+    document.querySelector("#showdata").innerHTML += `Mức ------ kWh điện không máy lạnh ----- kWh điện máy lạnh ----- Đơn giá`;
+    document.querySelector("#showdata").innerHTML += `<br>------------------------------------------------`;
     for(let i = 0; i < 6; i++){
-        document.querySelector("#showdata").innerHTML += `<br>level ${i+1}: ${eUsage[i]}kWh   '${eAirCond[i]}kWh   ${levelElectricFee[i]}đ`;
+        document.querySelector("#showdata").innerHTML += `<br>level ${i+1}: ${eUsage[i]} kWh   '${eAirCond[i]} kWh   ${levelElectricFee[i]}đ`;
     }
 }
