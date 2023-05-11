@@ -19,7 +19,14 @@
       <li>Nếu không dùng máy lạnh: (Tiền điện không máy lạnh / số người)</li>
       <li>Nếu dùng máy lạnh: (Tiền điện không máy lạnh / số người) + (Tiền điện riêng máy lạnh/ số người dùng máy lạnh)</li>
     </p>
-    <p>Kết quả đã tính thuế 8% và dùng mức giá [1.678,1.735,2.015,2.536,2.834,2.927]</p>
+      <label>Nhập mức thuế, hiện tại là 10%, mặc định là 0.1. Áp dụng đơn mức giá điện hiện tại : [1.728, 1.786, 2.074, 2.612, 2.919, 3.015]:</label>
+      <input
+      type="text"
+      class="form-control"
+      placeholder="0.1"
+      value = 0.1
+      id="tax" />
+    
     <p>Nhập kWh điện tổng luôn phải lớn hơn kWh điện máy lạnh</p>
     <label>Nhập số kWh điện tổng:</label>
     <input
